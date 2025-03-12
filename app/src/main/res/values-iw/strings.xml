@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ContactsManager</string>
+    <string name="title">מנהל טלפון</string>
+    <string name="name">שם</string>
+    <string name="phone_number">מספר טלפון</string>
+    <string name="email_address">כתובת אימייל</string>
+    <string name="save">שמור</string>
+    <string name="cancel">בטל</string>
+    <string name="home_address">כתובת בית</string>
+    <string name="website">אתר אינטרנט:</string>
+    <string name="date_of_birth">תאריך לידה</string>
+    <string name="choose">בחר</string>
+    <string name="chosen_date_of_birth">תאריך הלידה שנבחר</string>
+    <string name="preferred_time_to_call">זמן מועדף להתקשר</string>
+    <string name="chosen_time_to_call">הזמן שנבחר</string>
+    <string name="preferred_day_s_to_call">ימים מועדפים להתקשר</string>
+    <string name="chosen_days_to_call">הימים שנבחרו</string>
+    <string name="email">אימייל:</string>
+    <string name="home">כתובת:</string>
+    <string name="website_address">כתובת אתר</string>
+    <string name="no_date_chosen">לא נבחר תאריך</string>
+    <string name="no_time_chosen">לא נבחר זמן</string>
+    <string name="no_days_chosen">לא נבחרו ימים</string>
+    <string name="delete">מחק</string>
+    <string name="call">התקשר</string>
+    <string name="edit">ערוך</string>
+    <string name="back">חזור</string>
+    <string name="view">צפה</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/edit"
+        android:icon="@drawable/baseline_edit_24"
+        android:id="@+id/edit_menu_btn"/>
+
+    <item
+        android:title="@string/call"
+        android:icon="@drawable/baseline_phone_24"
+        android:id="@+id/call_menu_btn"/>
+
+    <item
+        android:title="@string/delete"
+        android:icon="@drawable/baseline_delete_24"
+        android:id="@+id/delete_menu_btn"/>
+
+    <item
+        android:title="@string/view"
+        android:id="@+id/view_menu_btn"/>
+
+</menu>

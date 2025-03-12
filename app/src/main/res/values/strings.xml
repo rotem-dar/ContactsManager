@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ContactsManager</string>
+    <string name="title">Phone Manager</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="home_address">Home Address</string>
+    <string name="website">Website:</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="choose">Choose</string>
+    <string name="chosen_date_of_birth">Chosen Date of Birth</string>
+    <string name="preferred_time_to_call">Preferred Time to Call</string>
+    <string name="chosen_time_to_call">Chosen Time to Call</string>
+    <string name="preferred_day_s_to_call">Preferred Day(s) to Call</string>
+    <string name="chosen_days_to_call">Chosen Days to Call</string>
+    <string name="email">Email:</string>
+    <string name="home">Home:</string>
+    <string name="website_address">Website Address</string>
+    <string name="no_date_chosen">No date chosen</string>
+    <string name="no_time_chosen">No time chosen</string>
+    <string name="no_days_chosen">No days chosen</string>
+    <string name="delete">Delete</string>
+    <string name="call">Call</string>
+    <string name="edit">Edit</string>
+    <string name="back">Back</string>
+    <string name="view">View</string>
+</resources>

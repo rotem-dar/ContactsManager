@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/backgroundColour"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="30dp"
+                android:layout_gravity="center"
+                android:id="@+id/contact_image_cardview">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/baseline_add_a_photo_24"
+                    android:background="@color/buttonColour"
+                    android:id="@+id/contact_image"
+                    android:padding="30dp"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contact_name_layout"
+                    android:textColorHint="@color/textColour"
+                    android:layout_margin="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/name"
+                        android:textColor="@color/textColour"
+                        android:id="@+id/contact_name"
+                        android:gravity="center" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/textColour"
+                    android:id="@+id/contact_phone_num_layout"
+                    android:layout_margin="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="phone"
+                        android:hint="@string/phone_number"
+                        android:id="@+id/contact_phone_num"
+                        android:textColor="@color/textColour"
+                        android:gravity="center" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_email_adr_layout"
+            android:textColorHint="@color/textColour"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email_address"
+                android:id="@+id/contact_email_adr"
+                android:textColor="@color/textColour"
+                android:gravity="center" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_home_adr_layout"
+            android:textColorHint="@color/textColour"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPostalAddress"
+                android:hint="@string/home_address"
+                android:id="@+id/contact_home_adr"
+                android:textColor="@color/textColour"
+                android:gravity="center" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_website_layout"
+            android:textColorHint="@color/textColour"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textWebEditText"
+                android:hint="@string/website_address"
+                android:id="@+id/contact_website"
+                android:textColor="@color/textColour"
+                android:gravity="center" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/date_of_birth"
+            android:layout_margin="5dp"
+            android:textColor="@color/textColour"
+            android:textColorHint="@color/textColour"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose"
+                android:backgroundTint="@color/textColour"
+                android:textColor="@color/backgroundColour"
+                android:textSize="18sp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/birth_date_btn"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/chosen_date_of_birth"
+                android:id="@+id/contact_birth_date"
+                android:layout_margin="10dp"
+                android:textColor="@color/textColour"
+                android:textColorHint="@color/textColour"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/preferred_time_to_call"
+            android:layout_margin="5dp"
+            android:textColor="@color/textColour"
+            android:textColorHint="@color/textColour"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose"
+                android:backgroundTint="@color/textColour"
+                android:textColor="@color/backgroundColour"
+                android:textSize="18sp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/call_time_btn"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/chosen_time_to_call"
+                android:id="@+id/contact_call_time"
+                android:layout_margin="10dp"
+                android:textColor="@color/textColour"
+                android:textColorHint="@color/textColour"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/preferred_day_s_to_call"
+            android:layout_margin="5dp"
+            android:textColor="@color/textColour"
+            android:textColorHint="@color/textColour"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose"
+                android:backgroundTint="@color/textColour"
+                android:textColor="@color/backgroundColour"
+                android:textSize="18sp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/call_day_btn"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/chosen_days_to_call"
+                android:id="@+id/contact_call_day"
+                android:layout_margin="10dp"
+                android:textColor="@color/textColour"
+                android:textColorHint="@color/textColour"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:backgroundTint="@color/buttonColour"
+            android:textColor="@color/backgroundColour"
+            android:textSize="25sp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/cancel_btn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/save"
+            android:backgroundTint="@color/buttonColour"
+            android:textColor="@color/backgroundColour"
+            android:textSize="25sp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/save_btn"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
